@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<!-- Coding by CodingNepal - youtube.com/@codingnepal -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dulcé Lunes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header / Navbar -->
+    <header>
+      <nav class="navbar">
+        <a href="#" class="nav-logo">
+          <h2 class="logo-text">🍰</h2>
+        </a>
+
+        <ul class="nav-menu">
+          <button id="menu-close-button" class="fas fa-times"></button>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#menu" class="nav-link">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a href="#testimonials" class="nav-link">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a href="#gallery" class="nav-link">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+
+        <button id="menu-open-button" class="fas fa-bars"></button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero section -->
+      <section class="hero-section">
+        <div class="section-content">
+          <div class="hero-details">
+            <p class="description">Welcome to our bakery café, <br>where every treat tells a story and every bite sparks joy.</p>
+
+            <div class="buttons">
+              <a href="#menu" class="button order-now">View Our Menu</a>
+              <a href="#contact" class="button contact-us">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About section -->
+      <section class="about-section" id="about">
+        <div class="section-content">
+          <div class="about-image-wrapper">
+            <img src="images/bg2.jpg" alt="About" class="about-image" />
+          </div>
+          <div class="about-details">
+            <h2 class="section-title">About Us</h2>
+            <p class="text">Dulcé Lunes Bakery Café is the perfect place to relax with friends, enjoy a cozy atmosphere, and savor freshly baked treats. Cakes, pastries, and refreshing drinks await you.</p>
+            <div class="social-link-list">
+              <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Menu section -->
+      <!-- Menu section -->
+      <section class="menu-section" id="menu">
+        <h2 class="section-title">Our Menu</h2>
+        <div class="section-content">
+          <ul class="menu-list">
+            <!-- Cake Menu Item -->
+            <li class="menu-item">
+              <img src="images/cake3.png" alt="Cake" class="menu-image" id="cakeImage" />
+              <div class="menu-details">
+                <h3 class="name">Cakes</h3>
+                <p class="text">Decadent slices for your sweetest cravings.</p>
+              </div>
+              <!-- Modal for Cake -->
+              <div id="cakeModal" class="modal">
+                <div class="modal-content">
+                  <span class="close-btn">&times;</span>
+                  <h2>Our Cake Collection</h2>
+                  <div class="cake-gallery">
+                    <!-- Example Item -->
+                    <div class="cake-item">
+                      <img src="images/cake1.png" alt="Chocolate Cake" />
+                      <div class="item-details">
+                        <p>Chocolate Cake</p>
+                        <p class="price">$12.99</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                      </div>
+                    </div>
+                    <!-- Example Item -->
+                    <div class="cake-item">
+                      <img src="images/cake2.png" alt="Vanilla Cake" />
+                      <div class="item-details">
+                        <p>Vanilla Cake</p>
+                        <p class="price">$10.99</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                      </div>
+                    </div>
+                    <!-- Example Item -->
+                    <div class="cake-item">
+                      <img src="images/cake3.png" alt="Red Velvet Cake" />
+                      <div class="item-details">
+                        <p>Red Velvet Cake</p>
+                        <p class="price">$14.99</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- Cupcake Menu Item -->
+            <li class="menu-item">
+              <img src="images/cupcake2.png" alt="Cupcake" class="menu-image" id="cupcakeImage" />
+              <div class="menu-details">
+                <h3 class="name">Cupcakes</h3>
+                <p class="text">Little delights for big smiles.</p>
+              </div>
+              <!-- Modal for Cupcake -->
+            <div id="cupcakeModal" class="modal">
+              <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>Our Cupcake Collection</h2>
+                <div class="cupcake-gallery">
+                  <!-- Example Item -->
+                  <div class="cake-item">
+                    <img src="images/cupcake1.png" alt="Chocolate Cake" />
+                    <div class="item-details">
+                      <p>Chocolate Cake</p>
+                      <p class="price">$12.99</p>
+                      <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                  </div>
+                  <!-- Example Item -->
+                  <div class="cake-item">
+                    <img src="images/cupcake2.png" alt="Vanilla Cake" />
+                    <div class="item-details">
+                      <p>Vanilla Cake</p>
+                      <p class="price">$10.99</p>
+                      <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                  </div>
+                  <!-- Example Item -->
+                  <div class="cake-item">
+                    <img src="images/cupcake3.png" alt="Red Velvet Cake" />
+                    <div class="item-details">
+                      <p>Red Velvet Cake</p>
+                      <p class="price">$14.99</p>
+                      <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </li>
+            <!-- Pastries Menu Item -->
+            <li class="menu-item">
+              <img src="images/pastry1.png" alt="Pastry" class="menu-image" id="pastryImage" />
+              <div class="menu-details">
+                <h3 class="name">Pastries</h3>
+                <p class="text">Perfect bites for anytime indulgence.</p>
+              </div>
+              <!-- Modal for Pastry -->
+              <div id="pastryModal" class="modal">
+                <div class="modal-content">
+                  <span class="close-btn">&times;</span>
+                  <h2>Our Cake Collection</h2>
+                  <div class="cake-gallery">
+                    <!-- Example Item -->
+                    <div class="pastry-item">
+                      <img src="images/pastry2.png" alt="Chocolate Cake" />
+                      <div class="item-details">
+                        <p>Pastry</p>
+                        <p class="price">$12.99</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                      </div>
+                    </div>
+                    <!-- Example Item -->
+                    <div class="pastry-item">
+                      <img src="images/pastry1.png" alt="Vanilla Cake" />
+                      <div class="item-details">
+                        <p>Pastry</p>
+                        <p class="price">$10.99</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                      </div>
+                    </div>
+                    <!-- Example Item -->
+                    <div class="pastry-item">
+                      <img src="images/pastry3.png" alt="Red Velvet Cake" />
+                      <div class="item-details">
+                        <p>Pastry</p>
+                        <p class="price">$14.99</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- Drinks Menu Item -->
+            <li class="menu-item">
+              <img src="images/coffee1.png" alt="Coffee" class="menu-image" id="coffeeImage" />
+              <div class="menu-details">
+                <h3 class="name">Drinks</h3>
+                <p class="text">Refreshing sips to fuel your day.</p>
+              </div>
+              <!-- Modal for Drinks -->
+              <div id="coffeeModal" class="modal">
+                <div class="modal-content">
+                  <span class="close-btn">&times;</span>
+                  <h2>Our Drink Collection</h2>
+                  <div class="cake-gallery">
+                    <!-- Example Item -->
+                    <div class="cake-item">
+                      <img src="images/coffee2.png" alt="Chocolate Cake" />
+                      <div class="item-details">
+                        <p>Latte</p>
+                        <p class="price">$12.99</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                      </div>
+                    </div>
+                    <!-- Example Item -->
+                    <div class="coffee-item">
+                      <img src="images/coffee1.png" alt="Vanilla Cake" />
+                      <div class="item-details">
+                        <p>Cappucino</p>
+                        <p class="price">$10.99</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                      </div>
+                    </div>
+                    <!-- Example Item -->
+                    <div class="coffee-item">
+                      <img src="images/drink1.png" alt="Red Velvet Cake" />
+                      <div class="item-details">
+                        <p>Espresso</p>
+                        <p class="price">$14.99</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- Ice Cream Menu Item -->
+            <li class="menu-item">
+              <img src="images/icecream1.png" alt="Icecream" class="menu-image" id="icecreamImage" />
+              <div class="menu-details">
+                <h3 class="name">Ice Cream</h3>
+                <p class="text">Chill out with creamy, dreamy delights.</p>
+              </div>
+              <!-- Modal for Ice Cream -->
+              <div id="icecreamModal" class="modal">
+                <div class="modal-content">
+                  <span class="close-btn">&times;</span>
+                  <h2>Our Ice Cream Collection</h2>
+                  <div class="icecream-gallery">
+                    <img src="images/icecream1.png" alt="Vanilla Ice Cream" class="icecream-item" />
+                    <img src="images/icecream2.png" alt="Chocolate Ice Cream" class="icecream-item" />
+                    <img src="images/icecream3.png" alt="Strawberry Ice Cream" class="icecream-item" />
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- Pancakes Menu Item -->
+            <li class="menu-item">
+              <img src="images/pancake1.png" alt="Pancake" class="menu-image" id="pancakeImage" />
+              <div class="menu-details">
+                <h3 class="name">Pancakes</h3>
+                <p class="text">Fluffy stacks to brighten your morning.</p>
+              </div>
+              <!-- Modal for Pancakes -->
+              <div id="pancakeModal" class="modal">
+                <div class="modal-content">
+                  <span class="close-btn">&times;</span>
+                  <h2>Our Pancake Collection</h2>
+                  <div class="pancake-gallery">
+                    <img src="images/pancake1.png" alt="Blueberry Pancake" class="pancake-item" />
+                    <img src="images/pancake3.png" alt="Chocolate Pancake" class="pancake-item" />
+                    <img src="images/pancake4.png" alt="Banana Pancake" class="pancake-item" />
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+
+      <!-- Testimonials section -->
+      <section class="testimonials-section" id="testimonials">
+        <h2 class="section-title">Testimonials</h2>
+        <div class="section-content">
+          <div class="slider-container swiper">
+            <div class="slider-wrapper">
+              <ul class="testimonials-list swiper-wrapper">
+                <li class="testimonial swiper-slide">
+                  <img src="images/user1.jpg" alt="User" class="user-image" />
+                  <h3 class="name">Sarah Johnson</h3>
+                  <i class="feedback">"Dulcé Lunes is my go-to spot for delicious pastries and coffee! The croissants are flaky, the cakes are heavenly, and the staff always greets you with a smile. It’s not just a bakery—it feels like home. Highly recommend to anyone who appreciates top-notch baked goods and cozy vibes!"</i>
+                </li>
+                <li class="testimonial swiper-slide">
+                  <img src="images/user2.jpg" alt="User" class="user-image" />
+                  <h3 class="name">James Wilson</h3>
+                  <i class="feedback">"This bakery is a hidden gem! The chocolate fudge cake is out of this world—so rich and decadent, it’s worth every calorie. I also tried their almond latte, and it was the best coffee I’ve had in ages. If you’re a dessert lover, you need to try this place ASAP!"</i>
+                </li>
+                <li class="testimonial swiper-slide">
+                  <img src="images/user3.jpg" alt="User" class="user-image" />
+                  <h3 class="name">Michael Brown</h3>
+
+                  <i class="feedback">"Dulcé Lunes is more than just a bakery—it’s a community treasure. From their friendly baristas to the thoughtful little touches like personalized latte art, it’s clear they care about their customers."</i>
+                </li>
+                <li class="testimonial swiper-slide">
+                  <img src="images/user4.jpg" alt="User" class="user-image" />
+                  <h3 class="name">Emily Harris</h3>
+
+                  <i class="feedback">"Every visit to Dulcé Lunes is like a mini-vacation! The ambiance is so relaxing, the desserts are exquisite, and the service is flawless. I love sitting by the window with a slice of their red velvet cake and watching the world go by. This place truly brightens my Monday and every other day of the week!"</i>
+                </li>
+                <li class="testimonial swiper-slide">
+                  <img src="images/user5.jpg" alt="User" class="user-image" />
+                  <h3 class="name">Anthony Thompson</h3>
+
+                  <i class="feedback">"I can’t say enough about how amazing the staff is at Dulcé Lunes. I had a last-minute order for a birthday cake, and they went above and beyond to make it perfect. The cake was stunning and tasted incredible! Thank you for saving the day—I'll definitely be coming back!""</i>
+                </li>
+              </ul>
+
+              <div class="swiper-pagination"></div>
+              <div class="swiper-slide-button swiper-button-prev"></div>
+              <div class="swiper-slide-button swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery section -->
+      <section class="gallery-section" id="gallery">
+        <h2 class="section-title">Gallery</h2>
+        <div class="section-content">
+          <ul class="gallery-list">
+            <li class="gallery-item">
+              <img src="images/img3.jpg" alt="Gallery Image" class="gallery-image" />
+            </li>
+            <li class="gallery-item">
+              <img src="images/bg3.png" alt="Gallery Image" class="gallery-image" />
+            </li>
+            <li class="gallery-item">
+              <img src="images/img4.jpg" alt="Gallery Image" class="gallery-image" />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Contact section -->
+      <section class="contact-section" id="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="section-content">
+          <ul class="contact-info-list">
+            <li class="contact-info">
+              <i class="fa-solid fa-location-crosshairs"></i>
+              <p>123 Campsite Avenue, Wilderness, CA 98765</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-regular fa-envelope"></i>
+              <p>dulcelunes@cafe.com</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-solid fa-phone"></i>
+              <p>(123) 456-78909</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-regular fa-clock"></i>
+              <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-regular fa-clock"></i>
+              <p>Saturday: 10:00 AM - 3:00 PM</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-regular fa-clock"></i>
+              <p>Sunday: Closed</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-solid fa-globe"></i>
+              <p>www.dulcedelunescafe'.com</p>
+            </li>
+          </ul>
+
+          <form action="#" class="contact-form">
+            <input type="text" placeholder="Your name" class="form-input" required />
+            <input type="email" placeholder="Your email" class="form-input" required />
+            <textarea placeholder="Your message" class="form-input" required></textarea>
+            <button type="submit" class="button submit-button">Submit</button>
+          </form>
+        </div>
+        <p id="credit">"Images used in this project are sourced from Pinterest and are the property of their respective creators. This work is for educational purposes only, and no copyright infringement is intended."</p>
+      </section>
+
+      <!-- Footer section -->
+      <footer class="footer-section">
+        <div class="section-content">
+          <p class="copyright-text">© 2024 Dulcé de Lunes</p>
+
+          <div class="social-link-list">
+            <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+
+          <p class="policy-text">
+            <a href="#" class="policy-link">Privacy policy</a>
+            <span class="separator">•</span>
+            <a href="#" class="policy-link">Refund policy</a>
+          </p>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Linking Swiper script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Linking custom script -->
+    <script src="script.js"></script>
+  </body>
+</html>
