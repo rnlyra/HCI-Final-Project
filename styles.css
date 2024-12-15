@@ -639,10 +639,9 @@ header .navbar {
 }
 
 #credit {
-  position: absolute;
-  bottom: 3%;
-  left: 10%;
-  font-size: 0.7em;
+  text-align: center;
+  font-size: 0.6em;
+  margin-top: 17px;
   color: white;
   font-style: italic;
 }
@@ -923,9 +922,11 @@ header .navbar {
   
   .hero-section {
     background-image: url(images/bg3.png);
-    padding-bottom: 110px;
+    padding-bottom: 50%;
     padding-left: 0px;
   }
+
+
   
   .modal-content {
     max-width: 95%; /* Adjust width further for very small screens */
@@ -979,5 +980,11 @@ header .navbar {
   .pancake-item {
     width: 100px;
     height: 70px;
+  }
+
+  #credit {
+    font-size: 0.4em;
+    margin-top: 14px;
+    padding: 10px;
   }
 }
