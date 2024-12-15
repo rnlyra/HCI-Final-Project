@@ -651,8 +651,9 @@ header .navbar {
   position: absolute;
   bottom: 3%;
   left: 10%;
-  font-size: 0.7em;
+  font-size: 0.6em;
   color: white;
+  font-style: italic;
 }
 
 /* Footer section styling */
